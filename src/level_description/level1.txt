@@ -1,0 +1,94 @@
+Abby,Billy,Caleb
+
+Abby, Normal:
+    Bio:How could she have time to do all of those activities?
+        Hello! I am 12 years old and I go to Middle School Junior High. I am excited to learn new things and meet
+        great friends. My favorite subjects in school are art, drama, and english. My hobbies include: musical theatre,
+        chess, sketching, and figure skating. Message me if we have any common interests!
+
+    photos:Good artist.
+
+    friends:Nothing interesting here
+
+    profilePic:She looks happy.
+
+    Timeline:
+        PicturePost:Cool sketch!
+            04/16/2017
+            sketch.jpg
+            First Post!
+                Likes:Billy
+                Comments:Billy:You're so talented
+
+        PicturePost:I remember when I was in Grade 6.
+            06/23/2017
+            grade_six_grad.jpg
+            I had a great time a Elementary School Public Education Centre For Children! Excited for next year!
+                Likes:Billy
+                Comments:Billy:Ready for next year?
+
+        TextPost:So about a week from this post, school started.
+            09/04/2017
+            Yay! School starts in less than a week!
+                Likes:Billy,Caleb
+                Comments:Billy:Signing up for chess this year Abby?,Caleb:Me too!
+
+        PicturePost:Looks like a nice school.
+            09/11/2017
+            school.jpg
+            First day! I'm soooo excited!!!!!
+                Likes:Caleb
+
+        PicturePost:Are you sure that's the real chess sign-up sheet?
+            09/14/2017
+            chess_club.jpg
+            Signed up for chess club. Message me if you joined!
+                Likes:Billy,Caleb
+                Comments:Billy:Haha! Of course I joined!,Caleb:Me
+
+Billy, Normal:
+    Bio:Introspective.
+        Chess is the gymnasium of the mind.
+
+    photos:Looks like he likes chess.
+
+    friends:Nothing interesting here.
+
+    profilePic:A happy youngster.
+
+    Timeline:
+        PicturePost:Future chess master here.
+            05/20/2017
+            billyChessPic.jpg
+            I am looking forward to next year's May Junior Chess Championship! Thanks!
+                Likes:Abby
+
+        PicturePost:Classic first day of school post.
+            09/11/2017
+            billyClassroom.jpg
+            First day of Middle School Junior High!
+                Likes:Abby,Caleb
+                Comments:Caleb:I am excited to meet you
+
+Caleb, Predator:
+    Bio:Typical middle schooler.
+        I love soccer, hockey, chess and math!
+
+    photos:Really good quality photos.
+
+    friends:Nothing interesting here.
+
+    profilePic:Cool picture.
+
+    Timeline:
+        PicturePost:Wow, boys with a "z".
+            08/18/2017
+            soccer_team.jpg
+            Great season boyz!
+
+        PicturePost:Different angle of the school, I guess.
+            09/13/2017
+            school.jpg
+            I'm psyched for my first day of school today
+                Comments:Billy:Where is this?
+
