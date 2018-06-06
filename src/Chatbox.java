@@ -213,12 +213,38 @@ public class Chatbox extends StackPane {
         Button submit = new Button("Enter message");
         submit.setOnAction(event -> {
             if (questionChoice.getValue() != null && personChoice.getValue() != null) {
+                if (responder.get(personChoice.getValue().toString()).get(questionChoice.getValue()) == null) {
+                    StackPane root = new StackPane();
+                    Stage stage = new Stage();
+                    Scene scene = new Scene(root);
+                    stage.setScene(scene);
+                    stage.setWidth(150);
+                    stage.setHeight(150);
+                    stage.setResizable(false);
+                    stage.initStyle(StageStyle.UNDECORATED);
 
-                addMessage("You", questionChoice.getValue().toString());
-                addMessage(
-                        personChoice.getValue().toString(),
-                        responder.get(personChoice.getValue().toString()).get(questionChoice.getValue().toString())
-                );
+                    StackPane exit1 = new StackPane();
+                    exit1.setPickOnBounds(false);
+                    exit1.setPadding(new Insets(10, 150 - 24, 150 - 24, 10));
+                    Photo exitButton = new Photo("buttons/ExitButton.png");
+                    exit1.getChildren().add(exitButton);
+
+                    root.getChildren().add(new Photo("screens/ChatError.png"));
+                    root.getChildren().add(exit1);
+                    exitButton.addEventHandler(MouseEvent.MOUSE_CLICKED, event1 -> {
+                        stage.close();
+                    });
+                    addVeil(stage);
+
+                    stage.show();
+                    left = Integer.toString(Integer.parseInt(left) + 1);
+                } else {
+                    addMessage("You", questionChoice.getValue().toString());
+                    addMessage(
+                            personChoice.getValue().toString(),
+                            responder.get(personChoice.getValue().toString()).get(questionChoice.getValue().toString())
+                    );
+                }
             }
             if (!left.equals("1")) {
                 try {

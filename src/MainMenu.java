@@ -53,6 +53,7 @@ public class MainMenu extends StackPane {
             continueGame();
         });
         highScores.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> {
+            Main.setStage(new HighScores(), 550, 500);
         });
         quit.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> System.exit(0));
 

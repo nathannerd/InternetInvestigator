@@ -55,6 +55,12 @@ public class Profile extends StackPane {
     private static StackPane veilPanes;
     private static StackPane hintPane;
 
+    /**
+     * Created a profile view for a character in a profile level
+     * This constructor populates the entire screen
+     * @param person person to base the profile off of
+     * @param levelNum the level that this person is from
+     */
     public Profile(Person person, int levelNum) {
         super();
         gridPane = new GridPane();
@@ -67,7 +73,8 @@ public class Profile extends StackPane {
 
         for (int i = 0; i < 11; i++) {
             for (int j = 0; j < 10; j++) {
-                if (j == 0 && i == 0) {   // mainmenu button
+                if (j == 0 && i == 0) {
+                    // Report button mechanic
                     StackPane sp = new StackPane();
                     Photo reportButton = new Photo("buttons/report/ReportButton.png");
                     sp.getChildren().add(reportButton);
@@ -75,9 +82,11 @@ public class Profile extends StackPane {
                     GridPane.setMargin(sp, new Insets(15, 0, 0, 25));
 
                     StackPane reportWin = new StackPane();
+
+                    // Setting up stage for when report button is clicked
                     Scene scene = new Scene(reportWin);
                     Stage stage = new Stage();
-                    stage.setTitle("Report");
+                    stage.setTitle("Home");
                     stage.setScene(scene);
                     stage.setResizable(false);
                     stage.setWidth(235);
@@ -85,6 +94,8 @@ public class Profile extends StackPane {
                     stage.initStyle(StageStyle.UNDECORATED);
                     BorderPane yesNo = new BorderPane();
                     yesNo.setPickOnBounds(false);
+
+                    // Yes/No buttons in new window
                     HBox buttons = new HBox(20);
                     buttons.setPadding(new Insets(0, 0, 5, 25));
                     buttons.setPickOnBounds(false);
@@ -94,8 +105,13 @@ public class Profile extends StackPane {
                     yesNo.setBottom(buttons);
                     reportWin.getChildren().addAll(new Photo("buttons/report/ReportWindow.png"), yesNo);
 
+                    // Show the newly created stage upon clicking reportButton
                     reportButton.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> stage.show());
 
+                    /*
+                      Upon clicking the yes button: add win or loss depending on the correctness of the player's
+                      guess, close the stage, reset the stage to the next level
+                     */
                     yes.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> {
                         BackgroundMusic.stop();
                         try {
@@ -118,49 +134,67 @@ public class Profile extends StackPane {
                             case 1:
                                 Main.setStage(new Scene(new Briefing2()), 550, 500);
                                 break;
-                            /*case 3:
+                            case 3:
                                 Main.setStage(new Scene(new Briefing4()), 550, 500);
-                                break;*/
-                            case 3: // replace with case 6
+                                break;
+                            case 6:
                                 Main.setStage(new FinalResults(), 550, 500);
                                 break;
                         }
                     });
 
+                    // Simply close the stage upon clicking the no button
                     no.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> stage.close());
 
                     addVeil(stage, "");
                     j += 2;
                 } else if (j == 4 && i == 0) {
-                    // "To Pinboard"
+                    // "To Pinboard" button is set up
                     StackPane sp = new StackPane();
                     Photo toPinboard = new Photo("buttons/ToPinboard.png");
                     sp.getChildren().add(toPinboard);
                     gridPane.add(sp, j, i, 2, 1);
                     GridPane.setMargin(sp, new Insets(15, 0, 0, 0));
 
-                    toPinboard.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> Main.setStage(new Pinboard(levelNum, "profile", "",  new ArrayList<HBox>()), 750, 600));
+                    // Upon clicking toPinboard, the user is directed back to the pinboard
+                    toPinboard.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> Main.setStage(
+                            new Pinboard(levelNum,
+                                    "profile",
+                                    "",
+                                    new ArrayList<>()), 750, 600)
+                    );
                     j++;
                 } else if (j == 7 && i == 0) {
                     // Top buttons (sound, help, and home)
                     GridPane topButtons = new GridPane();
                     topButtons.setPadding(new Insets(10, 0, 0, 0));
+
+                    // sound and soundOff buttons are created
                     Photo sound = new Photo("buttons/sound/SoundButton.png");
                     Photo soundOff = new Photo("buttons/sound/SoundOff.png");
+
+                    // Upon clicking sound button, background music stops and this button is set to the sound off button
                     sound.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> {
                         BackgroundMusic.stop();
                         topButtons.getChildren().set(0, soundOff);
                     });
+
+                    /*
+                      Upon clicking soundOff button, background music restarts and this button os set back to the
+                      sound button
+                     */
                     soundOff.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> {
                         BackgroundMusic.start();
                         topButtons.getChildren().set(0, sound);
                     });
+
+                    // help button and help screen are created
                     Photo help = new Photo("buttons/help/HelpButton.png", 40, 40);
                     StackPane helpWindow = new StackPane();
                     StackPane exit1 = new StackPane();
                     exit1.setPickOnBounds(false);
                     exit1.setPadding(new Insets(10, 211-24, 423-24, 10));
-                    Scene helpScene = new Scene(helpWindow);
+                    Scene helpScene = new Scene(helpWindow); // helpWindow is populated on line 179
                     Stage helpStage = new Stage();
                     helpStage.setTitle("Help");
                     helpStage.setScene(helpScene);
@@ -168,17 +202,22 @@ public class Profile extends StackPane {
                     helpStage.setWidth(211);
                     helpStage.setHeight(423);
                     helpStage.initStyle(StageStyle.UNDECORATED);
-                    Photo profileHelp = new Photo("buttons/help/ProfileHelp.png");
+
+                    Photo profileHelp = new Photo("buttons/help/ProfileHelp.png"); // This image has helpful
+                    // profile related help for the
+                    // user to refer to
                     Photo closeButton = new Photo("buttons/ExitButton.png");
                     exit1.getChildren().add(closeButton);
 
-                    helpWindow.getChildren().add(profileHelp);
-                    helpWindow.getChildren().add(exit1);
+                    helpWindow.getChildren().addAll(profileHelp, exit1);
 
+                    // home button and home stage are created
                     Photo home = new Photo("buttons/HomeButton.png", 40, 40);
                     StackPane homeWindow = new StackPane();
                     StackPane exit2 = new StackPane();
                     exit2.setPadding(new Insets(5, 129, 62, 5));
+
+                    // homeWindow is populated on line 208
                     Scene hwScene = new Scene(homeWindow);
                     Stage hwStage = new Stage();
                     hwStage.setTitle("Home");
@@ -187,39 +226,55 @@ public class Profile extends StackPane {
                     hwStage.setWidth(153);
                     hwStage.setHeight(86);
                     hwStage.initStyle(StageStyle.UNDECORATED);
+
                     VBox menuBox = new VBox();
                     menuBox.setPadding(new Insets(30, 0, 0, 0));
-                    Photo toMainMenu = new Photo("buttons/mainmenu/ToMainMenu.png");
-                    Photo quitGame = new Photo("buttons/QuitGameB.png");
-                    menuBox.getChildren().add(toMainMenu);
-                    menuBox.getChildren().add(quitGame);
+                    Photo toMainMenu = new Photo("buttons/mainmenu/ToMainMenu.png"); // Text displays To Main Menu
+                    Photo quitGame = new Photo("buttons/QuitGameB.png"); // Text displays Quit
+
+                    menuBox.getChildren().addAll(toMainMenu, quitGame);
                     menuBox.setPickOnBounds(false);
                     Photo closeButton2 = new Photo("buttons/ExitButton.png");
                     exit2.getChildren().add(closeButton2);
 
-                    homeWindow.getChildren().add(new Photo("buttons/HomeMenu.png"));
-                    homeWindow.getChildren().add(exit2);
-                    homeWindow.getChildren().add(menuBox);
+                    // homeWindow populated with HomeMenu button, exit2 and the menuBox
+                    homeWindow.getChildren().addAll(new Photo("buttons/HomeMenu.png"), exit2, menuBox);
 
+                    // Upon clicking on help, helpStage is shown
                     help.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> helpStage.show());
+
+                    // Upon clicking closeButton, helpStage closes
                     closeButton.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> helpStage.close());
 
+                    // Upon clicking home, hwStage is shown
                     home.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> hwStage.show());
+
+                    // Upon clicking closeButton2, hwStage closes
                     closeButton2.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> hwStage.close());
 
+                    // Upon clicking toMainMenu, background music terminates and stage switches to new MainMenu
                     toMainMenu.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> {
                         BackgroundMusic.stop();
+                        hwStage.close();
                         Main.setStage(new Scene(new MainMenu()), 550, 500);
                     });
-                    quitGame.addEventHandler(MouseEvent.MOUSE_CLICKED, e -> System.exit(0));
 
+                    // Upon clicking quitGame, program terminates
+                    quitGame.addEventHandler(MouseEvent.MOUSE_CLICKED, e ->
+                    {
+                        hwStage.close();
+                        System.exit(0);
+                    });
 
+                    /*
+                      If background music is not playing, soundOff button is displaying.
+                      If background music is playing, sound button is displaying
+                     */
                     topButtons.setHgap(10);
                     if (!BackgroundMusic.isPlaying()) {
                         topButtons.add(soundOff, 0, 0);
                     }
-                    else
-                    {
+                    else {
                         topButtons.add(sound, 0, 0);
                     }
                     topButtons.add(help, 1, 0);
@@ -231,8 +286,13 @@ public class Profile extends StackPane {
                     addVeil(helpStage, "");
                     addVeil(hwStage, "");
                 } else if (j == 0 && i == 1) {
-                    // Profile Picture
-                    Photo profilePic = person.getRawProfilePic();
+                    // Profile picture creation
+
+                    // profilePic is the same photo as person.profilePic but it is smaller
+                    Photo profilePic = person.getNewProfilePic(100);
+
+                    // Scene for when profile is clicked is created. The enlarged profilePic will be 3X the size of the
+                    // original
                     Scene scene = new Scene(person.getNewProfilePic(300));
                     Stage stage = new Stage();
                     stage.setTitle(String.format("%s's Profile Picture", person.getName()));
@@ -259,6 +319,8 @@ public class Profile extends StackPane {
                 } else if (j == 3 && i == 2) {
                     // bio
                     Text text;
+
+                    // If bio is more than 47 characters long, it is displayed with trailing dots
                     if (person.getBio().length() < 47) {
                         text = new Text(person.getBio());
                     } else {
@@ -278,6 +340,8 @@ public class Profile extends StackPane {
                     stage.setTitle("Bio");
                     stage.setScene(scene);
                     stage.setResizable(false);
+
+                    // Upon clicking bio, a new screen with the full bio is displayed
                     bio.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> stage.show());
                     gridPane.add(bio, j, i, 7, 1);
                     GridPane.setMargin(bio, new Insets(0, 40, 0, 0));
@@ -292,6 +356,8 @@ public class Profile extends StackPane {
                     root.setHgap(20);
                     root.setVgap(20);
 
+                    // If the person has no photos, an image that has the next "No photos" is displayed upon click
+                    // Else, their photos are displayed within a new window
                     if (person.getPhotos().size() == 0) {
                         root.add(new Photo("buttons/NoPhotos.png"), 0, 0);
                     } else {
@@ -314,6 +380,7 @@ public class Profile extends StackPane {
                     stage.setScene(scene);
                     stage.setResizable(false);
 
+                    // Newly created stage is displayed upon clicking photos button
                     photos.setOnAction(e -> stage.show());
 
                     gridPane.add(photos, j, i, 3, 5);
@@ -327,15 +394,20 @@ public class Profile extends StackPane {
 
                     ListView<String> list = new ListView<>();
                     ObservableList<String> items = FXCollections.observableArrayList();
+                    // items is populated with all friends of person
                     for (Person p : person.getFriends()) {
                         items.add(p.getName());
                     }
                     list.setItems(items);
+
+                    // This scene contains a ListView of all friends of person
                     Scene scene2 = new Scene(list);
                     Stage stage2 = new Stage();
                     stage2.setTitle("Friends");
                     stage2.setScene(scene2);
                     stage2.setResizable(false);
+
+                    // stage2 is displayed upon clicking friends
                     friends.setOnAction(e -> stage2.show());
 
                     gridPane.add(friends, j, i + 6, 3, 5);
@@ -363,10 +435,26 @@ public class Profile extends StackPane {
         this.getChildren().addAll(pPane, veilPanes, hintPane);
     }
 
+    /**
+     * For formatting purposes only
+     * Adds a while box to gridPane with given dimensions and informations
+     * @param width width of the white box
+     * @param height height of the white box
+     * @param colI column index
+     * @param rowI row index
+     * @param colSpan column span
+     * @param rowSpan row span
+     */
     private void white(int width, int height, int colI, int rowI, int colSpan, int rowSpan) {
         gridPane.add(new Rectangle(width, height, Color.WHITESMOKE), colI, rowI, colSpan, rowSpan);
     }
 
+    /**
+     * The passed in stage is highlighted and all other stages are dimmed in color and are unclickable
+     * If hint text is not an empty string, a bottom window is also highlighted with a hint from brother
+     * @param stage stage to be highlighted
+     * @param hintText brother's insight
+     */
     public static void addVeil(Stage stage, String hintText)
     {
         StackPane vPane = new StackPane();

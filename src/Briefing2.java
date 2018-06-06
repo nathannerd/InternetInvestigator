@@ -38,9 +38,6 @@ public class Briefing2 extends TextScreen {
             writer.close();
         } catch (IOException e) {}
 
-        pinboard = new Pinboard(2, "chat", "8", new ArrayList<HBox>());
-        Main.setStage(pinboard, 750, 600);
-/*
         String[][][] lines = {{{"Log 3."},
                 {"MONDAY", "OCTOBER 26, 2017"},
                 {"Today, the interior design club", "goes under investigation."},
@@ -67,7 +64,8 @@ public class Briefing2 extends TextScreen {
         timeline.setOnFinished(e -> {
             Main.setStage(pinboard, 750, 600);
         });
-        timeline.play();*/
+        timeline.play();
+
     }
 
     /**

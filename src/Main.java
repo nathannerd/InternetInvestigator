@@ -19,17 +19,17 @@ public class Main extends Application {
         pStage.setWidth(500);
         pStage.setResizable(false);
 
-        //root.getChildren().add(new MainMenu());
-        //root.getChildren().add(new Splashscreen());
+        root.getChildren().add(new MainMenu());
+        root.getChildren().add(new Splashscreen());
 
         //root.getChildren().add(new FinalResults());
 
         //BackgroundMusic bm = new BackgroundMusic();
-        //root.getChildren().add(new Briefing2());
+        //root.getChildren().add(new Briefing6());
         //BackgroundMusic.start();
         //setStage(new Pinboard(1, "profile", "", new ArrayList<HBox>()), 750, 600);
         //root.getChildren().add(new Briefing1());
-        root.getChildren().add(new Briefing5());
+        //root.getChildren().add(new Briefing5());
 
         pStage.show();
     }

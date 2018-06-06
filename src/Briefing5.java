@@ -38,11 +38,8 @@ public class Briefing5 extends TextScreen {
             writer.close();
         } catch (IOException e) {}
 
-        pinboard = new Pinboard(5, "chat", "10", new ArrayList<HBox>());
-        Main.setStage(pinboard, 750, 600);
-/*
         String[][][] lines = {{{"Log 6."},
-                {"MONDAY", "December 28, 2017"},
+                {"MONDAY", "January 22, 2018"},
                 {"It has been a month since I investigated", "the interior design club, and now", "I am starting to suspect that a member",
                         "of the volleyball team, is lying", "about his/her identity."},
                 {"There are 3 people that have", "never shown up to club meetings and",
@@ -60,7 +57,7 @@ public class Briefing5 extends TextScreen {
             }
         }
 
-        pinboard = new Pinboard(4, "chat", "9", new ArrayList<HBox>());
+        pinboard = new Pinboard(5, "chat", "10", new ArrayList<HBox>());
 
         Timeline timeline = new Timeline();
         timeline.getKeyFrames().addAll(new KeyFrame(Duration.millis(0), e -> screen(lines[0], 12, rowsAbove[0], 1)),
@@ -68,7 +65,7 @@ public class Briefing5 extends TextScreen {
         timeline.setOnFinished(e -> {
             Main.setStage(pinboard, 750, 600);
         });
-        timeline.play();*/
+        timeline.play();
     }
 
     /**

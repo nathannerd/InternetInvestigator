@@ -35,7 +35,7 @@ public class Intro extends TextScreen {
 
         HBox box = new HBox();
         VBox nameField = new VBox(5);
-        nameField.setPadding(new Insets(10, 0, 0, 0));
+        nameField.setPadding(new Insets(15, 0, 0, 0));
         TextField textField = new TextField();
         Text prompt = new Text("Enter your name:");
         prompt.setFill(Color.WHITE);
@@ -44,6 +44,10 @@ public class Intro extends TextScreen {
         b.setOnAction(e -> {
             if (textField.getCharacters().length() != 0) {
                 if (textField.getCharacters().toString().indexOf('%') != -1)
+                {
+                    textField.clear();
+                }
+                else if (textField.getCharacters().length() > 15)
                 {
                     textField.clear();
                 }
