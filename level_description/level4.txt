@@ -1,0 +1,19 @@
+Lori, Normal:
+    Lori, how are you liking the Outsiders?|It's good I guess. I prefer to read fantasy books but I like the drama in this one!
+    Lori, who's your favourite character so far?|I forget the name, but the main one. There are too many characters in this book.
+
+Bobby, Normal:
+    Bobby, how are you liking the Outsiders?|It's ok.
+    What made you want to join book club, Bobby?|I dunno. Bored, I guess.
+    Bobby, who is your favourite character?|The dude that fixes cars.
+    What do you want to be when you grow up?|A car mechanic.
+
+Nathan, Normal:
+    Who is your favourite character in the outsiders, Nathan?|Ponyboy. Such a tragic history. A man placed in the wrong society. It is all very interesting to think about.
+    Will you be at the next meeting, Nathan?|I go to every meeting! I LOVE READING!!!!
+    How far are you in the book, Nathan?|I read ahead and finished! Hehehehehe!
+
+Sarah, Predator:
+    Sarah, how far are you in the Outsiders?|I actually haven't started because I lost the book, could you let me borrow your library card?
+    Sarah, will you be at the next meeting?|No, I'm actually sick. Though could you give me your contact info so you can tell me what happens?
+

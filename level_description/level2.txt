@@ -1,0 +1,20 @@
+Heather, Normal:
+    Do you like Interior Design Club?|Yes! It's my favorite part of the day!
+    How's the project going? Show us what you've done so far!|heather_bedroom.jpg
+    I don't remember meeting a Heather at the first meeting. Were you there?|Ya of course! Make sure to introduce yourself next time!
+
+Ingrid, Normal:
+    Do you like Interior Design Club?|It's alright, I guess.
+    How's the project going? Show us what you've done so far!|ingrid_bedroom.jpg
+    I don't remember meeting an Ingrid at the first meeting. Were you there?|No I wasn't. I had homework
+
+Jerry, Predator:
+    Do you like Interior Design Club?|Yes
+    How's the project going? Show us what you've done so far!|jerry_bedroom.jpg
+    I don't remember meeting an Jerry at the first meeting. Were you there?|No I couldn't make it because I had to return a book at the school library. I'll be there next time!
+
+Kerry, Normal:
+    Do you like Interior Design Club?|No. My mom's forcing me!
+    How's the project going? Show us what you've done so far!|I haven't really started. This is really not my thing
+    I don't remember meeting a Kerry at the first meeting. Were you there?|Yes, my mom makes me attend every meeting! Really sucks!
+

@@ -1,0 +1,23 @@
+Jordan, Normal:
+    Jordan, why did you join the Say No To Litter Club?|I got in trouble with administration at school, and they are making me do community service.
+    Do you care about the environment, Jordan?| Whatever. Please don't talk to me.
+    What do you want to be when you grow up, Jordan?|I haven't thought about it yet. I just know that I hate school and want to get out ASAP.
+
+Christian, Normal:
+    Christian, why did you join this club?|I believe that as inhabitants on this planet, it is our job to take care of it.
+    Christian, what is your favourite subject in school?|I like social studies. Especially that unit we did on religion.
+    Christian, what do you want to be when you grow up?|I want to be a priest!
+
+Jake, Predator:
+    Jake, why are you in the Say No To Litter Club?|I thought that I would do some community service and try to meet some new people!
+    Jake, will you be going to the next school-wide clean up?|I'm not sure yet.
+    Jake, what do you want to be when you grow up?|I want to be an astronaut. Always pursue your dreams!
+
+Mohamed, Normal:
+    Mohamed, what made you want to join the club?|I love the environment and wanted to help out! Also, my friend Christian is in the club.
+    Mohamed, will you be at the next litter protest?|Of course! All my friends are going!
+
+Sally, Normal:
+    Sally, why did you join the Say No To Litter Club?|All my closest friends are in this club.
+    Sally, have you made a poster for the next litter protest yet?|Yes. Christian and I worked on one the other day!
+

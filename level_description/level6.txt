@@ -1,0 +1,176 @@
+Royie,Steven,Tristan,Usha,Violet,Wilson
+
+Royie, Normal:
+    Bio:Super cheesy.
+        Havin a blast at this school. Lookin forward to new adventures.
+
+    photos:This kid likes bikes
+
+    friends:Nothing interesting here
+
+    profilePic:Get some exercise!
+
+    Timeline:
+        PicturePost:Wow, that would be hard.
+            10/02/2017
+            charity.jpg
+            You can't see me but this past weekend I participated in a charity bike run for MS!
+                Likes:Steven,Tristan,Usha,Violet,Wilson
+
+        TextPost:I'd join that!
+            09/20/2017
+            If anybody would like to join a biking club, message me! Mr. Henry said I sould start up a club if 8 people would join.
+                Likes:Steven,Tristan,Usha,Violet,Wilson
+                Comments:Steven:Me!,Tristan:I'll join!,Usha:Biking's not my thing. Sorry Royie.,Violet:Absolutely. I'd love to support!
+
+Steven, Predator:
+    Bio:Pretty well rounded for a nerd!
+        I go to Middle School Junior High. Math is my favourite past-time. I am in the Math Club, Yearbook Club, and Tennis Club.
+
+    photos:I mean, math isn't particularity interesting to photograph.
+
+    friends:Nothing interesting here
+
+    profilePic:Yep. Spot on.
+
+    Timeline:
+        TextPost:Poor kid.
+            10/20/2017
+            To all my friends at Yearbook Club: I have been feeling sick all week. I will be back at school and attending meetings after the weekend for sure.
+                Likes:Royie,Tristan,Violet
+                Comments:Usha:No worries!,Wilson:Better come to tennis practice too! haha,Tristan:All good dude. Excited to meet you!
+
+        PicturePost:Alright! Stevie means buisness!
+            09/23/2017
+            mathproof1.jpg
+            Wow! Came across this today and I think it's pretty cool. Did anybody know this?
+                Likes:Royie,Wilson
+                Comments:Wilson:I did not. I don't find this interesting.,Steven:Haha. One day you'll appreciate this. Or not :).,Wilson:Ha yea probably not.
+
+        PicturePost:
+            09/18/2017
+            mathproof2.jpg
+            My favourite past time while sick is finding math proofs online. Comment if you can see the problem with this one.
+                Likes:Violet
+                Comments:Violet:Can't divide by zero! We do this kind of stuff in math club all the time. Message me to join!
+
+Tristan, Normal:
+    Bio:You should be friends with this kid
+        I love rock climbing! I have dreams of competing at a world cup someday, but until then I like photography, science and art.
+
+    photos:Cool!
+
+    friends:Nothing interesting here
+
+    profilePic:Good shape for a middle schooler
+
+    Timeline:
+        TextPost:Seems insincere, but could just be me
+            10/25/2017
+            Hey guys! Please support https://earthday.ca/. I love the environment and I want to see it prosper!
+                Likes:Royie,Steven,Usha,Violet,Wilson
+                Comments:Usha:I donated!,Violet:So inspiring!!!,Wilson:Looks good man,Tristan:Thanks to everyone who donated
+
+        PicturePost:
+            10/14/2017
+            podium.jpg
+            Congrats to everyone who competed this weekend! I hope to get on the podium next time
+                Likes:Royie,Steven,Usha,Violet,Wilson
+                Comments:Steven:You'll get 'em next time,Violet:Nice try Tristan!
+
+        PicturePost:
+            10/08/2017
+            outside.jpg
+            Went to the glen today! This is my coach crushing a V6!!!
+                Likes:Royie,Usha
+                Comments:Royie:Damn
+
+        PicturePost:
+            06/20/2017
+            comp.jpg
+            This is from the last comp of the season. Looking forward to next year!
+                Likes:Royie,Steven,Usha,Violet,Tristan
+
+Usha, Normal:
+    Bio:That's cool.
+        I love wildlife photography, but I am also very focused on my academics!
+
+    photos:Very professional!
+
+    friends:Nothing interesting here
+
+    profilePic:Nice photo!
+
+    Timeline:
+        PicturePost:That's dedication
+            10/24/2017
+            animal.jpg
+            Woke up early this morning to take some photos!
+                Likes:Royie,Steven,Tristan,Violet,Wilson
+                Comments:Tristan:How do you have the patience for this. It must be so hard.,Wilson:Awesome pic!!!,Usha:Thanks guys!
+
+        TextPost:Skipping school?
+            10/13/2017
+            For those in my science class, does anyone know what the science homework was? I wasn't in class today.
+                Comments:Tristan:We had to do questions 1-10 on page 3 of the workbook.,Usha: Thanks!,Tristan:No problem.
+
+        PicturePost:That's beautiful. Seems too good for a 12 year old, don't you think?
+            10/08/2017
+            sunrise.jpg
+            Woke up early to go and photograph the sunrise!
+                Likes:Royie,Violet
+
+Violet, Normal:
+    Bio:Seems legit!
+        Just your typical middle schooler! I like to participate in school sports and extra-curricular activities
+        such as soccer and math club
+
+    photos:Just a normal girl
+
+    friends:Nothing interesting here
+
+    profilePic:Pretty sure that's a watermark. Professionally taken photo or a fraud?
+
+    Timeline:
+        TextPost:Good for her!
+            10/19/2017
+            That's a wrap on the first math contest of the year! And I came third in the city!! Thanks to everyone in math club who made this happen: Arvin, Lisa, Nathan and Jordan!
+                Likes:Royie,Tristan,Usha,Wilson
+                Comments:Usha:Congrats!
+
+        PicturePost:Looks like this photo was taken a while ago.
+            10/01/2017
+            children.jpg
+            Happy October! Just came across this childhood photo of my siblings and I :)
+                Likes:Royie,Steven,Tristan,Usha,Wilson
+                Comments:Royie:Cute,Wilson:Looks just like you!,Usha:Adorable
+
+        PicturePost:Well, the others seem to know her?
+            09/11/2017
+            school.jpg
+            School starts today. I am excited to meet new people and see all of my friends again!
+                Likes:Royie,Tristan,Usha,Wilson
+                Comments:Tristan:Hope you had a good summer break!,Usha:SO EXCITED TO SEE YOU VIOLET!,Wilson:It's been a while! Looking forward to seeing you too.
+
+        TextPost:Makes sense
+            09/09/2017
+            School is starting soon. I'm excited but also a bit sad that summer has come to an end. Looking forward to seeing all of my friends!
+                Likes:Usha
+                Comments:Usha:YES!
+
+Wilson, Normal:
+    Bio:He wants to be a doctor but doesn't like science. Not very thought out.
+        I want to be a doctor when I grow up. In the mean time I play tennis and video games. I don't like basketball and science :P
+
+    photos:Tennis as you'd expect
+
+    friends:Nothing interesting here
+
+    profilePic:That's a watermark! Violet had one two! I'm so confused. Maybe look it up and see!
+
+    Timeline:
+        TextPost:Is he club president?
+            10/16/2017
+            First yearbook club meeting tomorrow at lunch, don't forget!
+                Likes:Royie,Steven,Tristan,Usha,Violet
+

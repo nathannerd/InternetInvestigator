@@ -1,0 +1,130 @@
+Dorothy,Eden,Frederick,Greg
+
+Dorothy, Normal:
+    Bio:Seems pretty self-explanatory
+        Volleyball!
+
+    photos:She seems like a pro!
+
+    friends:Nothing interesting here
+
+    profilePic:Well, what else did you expect!
+
+    Timeline:
+        PicturePost:Ok, so she's got a life outside of volleyball.
+            07/11/2017
+            girls.jpg
+            Fun day with my girls!
+                Likes:Eden
+                Comments:Eden:Invite me next time girl! You guys are so cute!
+
+        PicturePost:Summer birthday?? Not that relevant I guess...
+            07/03/2017
+            scooter.jpg
+            My mom got me a scooter for my birthday!
+                Likes:Eden
+
+        PicturePost:Sponsored, eh? Didn't know kids get sponsored.
+            06/22/2017
+            nationals.jpg
+            Thanks REDBULL for sending me and my team to nationals!
+                Likes:Eden
+                Comments:Eden:OMG! You're sooooo great!
+
+Eden, Predator:
+    Bio:It's cheesy but it sure is motivational!
+        With the right kind of determination, you can accomplish anything!
+
+    photos:I mean, maybe she's self conscious?
+
+    friends:Nothing interesting here
+
+    profilePic:Must be a fan!
+
+    Timeline:
+        PicturePost:Well depends on who you are, but the message is kind
+            10/08/2017
+            sun.jpg
+            You are enough just as you are!
+                Likes:Frederick,Abby
+                Comments:Frederick:Thank you Eden.
+        TextPost:True. I wonder what inspired this post.
+            10/02/2017
+            Such good people in the world!
+
+        PicturePost:Well it was nice out that day!
+            09/20/2017
+            niceday.jpg
+            Walked to school today, such a nice day!
+                Comments:Frederick:Yes it was.
+
+        PicturePost:Damn, this girl loves her pop music!
+            09/19/2017
+            katyperry.jpg
+            I love Katy Perry!
+                Likes:Dorothy
+
+        TextPost:Try hard much?
+            09/11/2017
+            Hello! I just started at Middle School Junior High, and I don’t know anybody. If you would like to hang out with me, see me at the woodbine subway, right by my house after school! Thanks guys!
+                Likes:Dorothy
+                Comments:Dorothy:Woodbine is like 2 hours from school. How about we meet somewhere closer?,Eden:Oh true. We can meet closer!
+
+Frederick, Normal:
+    Bio:Seems like a nice kid.
+        I am a first generation immigrant from Germany looking to make friends!
+
+    photos:He'll open up eventually
+
+    friends:Nothing interesting here
+
+    profilePic:Lookin' good
+
+    Timeline:
+        TextPost:I didn't know the Germans played Volleyball.
+            10/03/2017
+            Could anybody message me the volleyball tryout date?
+                Comments:Dorothy:It's on October 12th. See you there!,Frederick:Thank you Dorothy.
+
+        PicturePost:Must be tough starting at a new school without knowing anyone
+            09/11/2017
+            school.jpg
+            This is the first day of school
+                Likes:Dorothy,Eden
+
+        PicturePost:How long is that plane ride? Like 8 hours?
+            08/18/2017
+            plane.jpg
+            On a plane to Canada!
+
+Greg, Normal:
+    Bio:Edgy much
+        Everything sucks
+
+    photos:Little brother, you don't know these bands, but they're as hardcore as it gets
+
+    friends:Nothing interesting here
+
+    profilePic:That's the band Linkin Park
+
+    Timeline:
+        PicturePost:This is Rage Against The Machine. It's an angry band for sure
+            08/18/2017
+            ratm.jpg
+            Rage
+
+        PicturePost:Primus. They're pretty hardcore as well
+            08/06/2017
+            primus.jpg
+            PRIMUS
+
+        PicturePost:This band is Five Finger Death Punch. Heavy metal
+            07/18/2017
+            ffdp.jpg
+            Yea
+
+        PicturePost:He's not liked other's posts and nobody's liked his. It's like he doesn't go to this school...
+            07/06/2017
+            rb.jpg
+            Royal Blood is the best!
+
